@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Realtie data from server socket io</title>
+	<script src="/socket.io/socket.io.js" type="text/javascript"></script>
+	<script></script>
+</head>
+<body>
+<h2>Realtime data from server using node-socket.io</h2>
+Dari Server <span id="counter"></span>
+<script>
+	var socket = io();
+	var conuter = document.getElementById('counter');
+	
+	socket.on('keClient', function(data){
+		console.log(data);
+		counter.innerHTML = data;
+		
+		data = data + 1;
+
+		socket.emit('keServer', data);
+	});
+</script>
+</body>
+</html>

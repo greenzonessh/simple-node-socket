@@ -1,0 +1,23 @@
+{
+  "name": "sample-node-socket",
+  "version": "1.0.0",
+  "description": "Contoh komunikasi realtime dari (server ke client) dari client ke server) dan full-duplex (bolak balik) via protokol websocket",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h4rm41n/sample-node-socket.git"
+  },
+  "author": "Ahmad Harmain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h4rm41n/sample-node-socket/issues"
+  },
+  "homepage": "https://github.com/h4rm41n/sample-node-socket#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.4.8"
+  }
+}
